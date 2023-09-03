@@ -1,0 +1,9 @@
+Instalação de ferramenta nessa aplicação
+$ npm -g install http-server
+
+para rodar o servidor 
+http-serve ./
+-------------------------
+colocar normalize- vai padronizar os estilos do css em todos os navegadores. nao vai mudar
+Normalise.css 
+usando cdn 

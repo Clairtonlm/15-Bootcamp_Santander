@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API</title>
+    <!-- Adicionando style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <!-- Instalando Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Instalando GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="banner">
+            <img src="https://codeboost.com.br/projetos/pokeapi/img/logo.svg" alt="" srcset="">
+            <h1>Qual seu Pokemon?</h1>
+        </div>
+        <div class="pesquise">
+           <h2>Pesquise seu Pokemon</h2>
+           <input type="search" name="seach" id="seach">
+        </div>
+    </header>
+    <section class="content">
+        <h1>Pokedex</h1>
+        <ol class="pokemons">
+            <li class="pokemon">
+                <span class="number">#001</span>
+                <span class="name">Charmeleon</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">grass</li>
+                        <li class="type">poison</li>
+                    </ol>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg" alt="" srcset="">
+                </div>
+                
+            </li>
+           <!-- 
+             <li>Charizard
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="" srcset="">
+            </li>
+            <li>Mewtwo
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/8.svg" alt="" srcset="">
+            </li>
+            <li>Bulbasaur
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg" alt="" srcset="">
+            </li>
+            <li>Eevee
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg" alt="" srcset="">
+            </li>
+            <li>Gyarados
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg" alt="" srcset="">
+            </li>
+            <li>Snorlax
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/7.svg" alt="" srcset="">
+            </li>
+            <li>Lucario
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/14.svg" alt="" srcset="">
+            </li>
+            -->
+            
+        </ol>
+       
+    </section>
+   <!-- Nosso JS -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
