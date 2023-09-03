@@ -1,11 +1,36 @@
 //como fazer requisição http via javascript
-const url = 'https://pokeapi.co/'
-const linit = 10;
-const ofSet = 0;
 
-fetch(url).then(response=>{
-    console.log(response)
+const limit = 10;
+const offset = 0;
+const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
+
+fetch(url)
+.then((response) =>{
+     return response.json()
+})
+.then((jsonBody)=>{
+    console.log(jsonBody);
+})
+.catch(function(error){
+    console.error('deu erro na req')
+})
+.finally(function(){
+    console.log("Requisição concluída")
 })
 
-const x = 10 + 10
-console.log(x);
+
+// fetch(url)
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error('Erro na requisição');
+//     }
+//     return response.json();
+//   })
+//   .then(data => {
+//     // Faça algo com os dados obtidos da resposta
+//     console.log(data);
+//   })
+//   .catch(error => {
+//     console.error('Erro:', error);
+//   });
+// console.log('ola ');
