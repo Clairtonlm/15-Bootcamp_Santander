@@ -1,8 +1,6 @@
 //como fazer requisição http via javascript
 
-const limit = 10;
-const offset = 0;
-const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
+
 
 function convertpokemonToHtml(pokemon){
     return `
@@ -23,15 +21,18 @@ function convertpokemonToHtml(pokemon){
 
 const pokemonList = document.getElementById('pokemonList')
 
-fetch(url)
-.then((response)=>response.json())
-.then((jsonBody)=> jsonBody.results)
+pokeApi.getPokemon()
+   
 .then((pokemons)=>{
+    const listItens = []
+    pokemons.map()
     for (let i = 0; i < pokemons.length; i++) {
         const pokemon = pokemons[i];
-        pokemonList.innerHTML += convertpokemonToHtml(pokemon)
+        listItens.push(convertpokemonToHtml(pokemon))
+        
         
     }
+    console.log(listItens); 
 })
 .catch((error)=> console.log(error))
 
