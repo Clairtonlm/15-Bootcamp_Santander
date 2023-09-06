@@ -54,11 +54,13 @@ body{
 @media screen and (min-width: 992px){
     .pokemons{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 8px;
     }
 }
 @media screen and (min-width: 576px){
     .pokemons{
         grid-template-columns: 1fr 1fr 1fr ;
+        gap: 8px;
     }
 }
 
