@@ -1,5 +1,6 @@
 package maquinas;
 
-public class Copiadora {
-
+public interface Copiadora {
+	public void copiar();
+	
 }
